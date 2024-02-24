@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+
+{% block main %}
+<style>
+	a {
+		text-decoration: none;
+	}
+</style>
+
+	<h2>What newspaper would you like to see today?</h2>
+	<div class="newspapers">
+		<a href="{{ url_for('get_news', news='bbc') }}"><button>BBC</button></a>
+		<a href="{{ url_for('get_news', news='cnn') }}"><button>CNN</button></a>
+		<a href="{{ url_for('get_news', news='fox') }}"><button>Fox News</button></a>
+		<a href="{{ url_for('get_news', news='guardian') }}"><button>Guardian Nigeria</button></a>
+	</div>
+{% endblock %}

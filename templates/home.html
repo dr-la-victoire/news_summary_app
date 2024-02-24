@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./static/styles.css">
+	<title>The Headlines</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<h2>The Headlines</h2>
+			<a href="{{ url_for('index') }}">Home</a>
+			<a href="{{ url_for('select') }}">Select Newspaper</a>
+			<a href="#">About</a>
+		</nav>
+	</header>
+	<main>
+		{% block main %}
+		<h2>Today's News In Short Form At Your Finger Tips</h2>
+		<p>We understand how difficult it can be to keep up with the fast-paced world we leave in. So we are here to help you!</p>
+		{% endblock %}
+	</main>
+</body>
+</html>

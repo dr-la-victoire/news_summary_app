@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+body {
+	background-color: black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+/* NAVBAR STYLES */
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: white;
+	font-weight: bold;
+	margin: 20px 30px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	opacity: 0.7;
+}
+
+/* MAIN STYLES */
+main {
+	width: 50%;
+	margin: 250px;
+	text-align: center;
+}
+
+main h2 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/* BUTTON STYLES */
+button {
+	display: block;
+	width: 50%;
+	margin: 10px auto;
+	height: 50px;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 4px;
+	cursor: pointer;
+} 
+
+button a {
+	text-decoration: none;
+}
+
+button:hover {
+	background-color: white;
+	color: black;
+}
+
+button:active {
+	background-color: gold;
+	color: black;
+}

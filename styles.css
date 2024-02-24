@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+body {
+	background-color: black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+/* NAVBAR STYLES */
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

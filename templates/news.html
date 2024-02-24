@@ -1,0 +1,27 @@
+{% extends 'home.html' %}
+
+{% block main %}
+
+<style>
+	main {
+		margin-top: 50px;
+	}	
+	a {
+		color: white;
+	}
+	.hero {
+		text-align: left;
+		font-weight: bold;
+		margin-bottom: 50px;
+	}
+</style>
+
+<h1 class="hero">Today's Headlines</h1>
+
+{% for article in articles %}
+<a href="{{ article.link }}"><h2>{{ article.title }}</h2></a> <br/>
+<p>{{ article.description }}</p> <br/>
+<p>{{ article.published }}</p> <br/>
+<hr>
+{% endfor %}
+{% endblock %}
